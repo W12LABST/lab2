@@ -1,0 +1,46 @@
+Opis realizacji zadań z laboratorium nr. 2.
+
+Budowa wypożyczalni:
+Wypożyczalnia jest zbudowana z klas. Każda klasa oprócz "Zbior" oraz "Wypozyczalnia" reprezentują oddzielne
+typy pozycji wypożyczanych w wypożyczalni. Klasa zbiór jest klasa bazową. Program zawiera proste menu, z
+którego można wybierać opcje aby można było wygodnie posługiwać się takim uproszczonym systemem wypożyczalni.
+W klasie "Wypozyczalnia" znajduje się metoda "main".
+Szczegóły na temat programu znajdują się w odpowiednich miejscach w postaci komentarzy w kodzie.
+
+Schemat struktury systemu:
+
+Memu główne <-> menu użytkownika <-*> Zasoby wypożyczalni  
+
+<-> - oznacza możliwość poruszania się pomiędzy tymi pozycjami menu w konsoli
+<-*> - oznacza warunkowe poruszanie się pomiędzy tymi pozycjami menu w konsoli (warunkiem jest posiadanie 
+zerowych zaległości finansowych)
+
+
+Zaimplementowane funkcjonalności:
+-Możliwość wypożyczania pozycji przez użytkownika 
+-Wyświetlanie na koncie użytkownika wypożyczonych pozycji oraz ewentualnych kar finansowych
+-Menu użytkownika
+-Blokada konta w przypadku braku zwrotu danej pozycji w terminie
+-Dziedziczenie klas 
+-Tworzenie nowych obiektów klas dziedziczących przez konstruktory
+
+Funkcjonalności do zaimplementowania:
+-Możliwość zakładania konta użytkownika i przechowywania jego danych
+
+Klasy:
+-Zbior
+-Ebook
+-Audiobook
+-Film
+-PlytaMuzyczna
+-Ksiazka
+-Wypozyczalnia
+
+Dziedziczenie klas:
+Klasa zbiór jest klasa bazową, po której dziedziczą klasy:
+-Ebook
+-Audiobook
+-Film
+-PlytaMuzyczna
+-Ksiażka
+
